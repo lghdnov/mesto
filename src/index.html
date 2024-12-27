@@ -15,7 +15,11 @@
   </header>
   <main class="content">
     <section class="profile page__section">
-      <div class="profile__image" ></div>
+      <div class="profile__image">
+        <div class="profile__edit-image-button">
+          <img src="./images/edit-icon.svg" class="profile__edit-image-button_icon"></img>
+        </div>
+      </div>
       <div class="profile__info">
         <h1 class="profile__title">Жак-Ив Кусто</h1>
         <button class="profile__edit-button" type="button"></button>
@@ -43,6 +47,17 @@
         <input type="text" name="description" class="popup__input popup__input_type_description" placeholder="Занятие" required minlength="2" maxlength="200">
         <span class="popup__fielderror" id="profileDescriptionError"></span>
         <button type="submit" class="button popup__button" id="profileSubmit">Сохранить</button>
+      </form>
+    </div>
+  </div>
+  <div class="popup popup_type_avatar-edit">
+    <div class="popup__content">
+      <button type="button" class="popup__close"></button>
+      <h3 class="popup__title">Обновить аватар</h3>
+      <form class="popup__form" name="edit-avatar">
+        <input type="text" name="name" class="popup__input popup__input_type_url" placeholder="Ссылка на картинку" required>
+        <span class="popup__fielderror" id="placeUrlError"></span>
+        <button type="submit" class="button popup__button">Сохранить</button>
       </form>
     </div>
   </div>
@@ -75,7 +90,11 @@
     <div class="card__description">
       <h2 class="card__title">
       </h2>
-      <button type="button" class="card__like-button"></button>
+      <div class="card__like-container">
+        <button type="button" class="card__like-button"></button><br>
+        <span class="card__like-counter">0</span>
+      </div>
+      
     </div>
   </li>
 </template>

@@ -8,6 +8,8 @@
   background-size: cover;
   background-position: center;
   margin: 0 29px 0 0;
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 740px) {
